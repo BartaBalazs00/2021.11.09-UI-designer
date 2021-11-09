@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error{
+        color: red;
+    }
+    form{
+        text-align: center;
+        background-color: rgb(211, 211, 211);
+        border-radius: 20px;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+    form >div > input{
+        width: 90%;
+        height: 3em;
+        margin: 1em;
+        text-align: center;
+    }
+    body{
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .elonezet{
+        text-align: center;
+    }
+    h1{
+        text-align: left;
+    }
+    button{
+        height: 4em;
+        border-radius: 20px;
+        margin-bottom: 1em;
+    }
+</style>
+<body>
+    <form onsubmit="return false">
+        <div>
+            <label for="szoveg">Mintaszöveg:</label><br>
+            <input type="text" id="szoveg"><br>
+            <span id="szovegError"></span>
+        </div>
+        <div>
+            <label for="betumeret">Betüméret:</label><br>
+            <input type="number" id="betumeret"><br>
+            <span id="betumeretError"></span>
+        </div>
+        <div>
+            <label for="szovegszin">Szövegszín:</label><br>
+            <input type="color" id="szovegszin">
+        </div>
+        <div>
+            <label for="hatterszin">Háttérszín:</label><br>
+            <input type="color" id="hatterszin">
+        </div>
+        <div>
+            <button id="alaphelyzet">Alaphelyzet</button>
+        </div>
+    </form>
+    
+    <div class="elonezet">
+        <h1>Előnézet</h1>
+        <p id="elonezet"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
